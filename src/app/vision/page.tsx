@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Vision() {
     return (
-        <main className="relative flex h-[100dvh] w-full flex-col items-center justify-center overflow-hidden bg-black text-white px-4">
+        <main className="relative flex h-[100dvh] w-full flex-col items-center justify-center overflow-hidden text-white px-4">
             <div className="z-50 flex flex-col items-center justify-center text-center relative px-4 sm:px-6 md:px-10 w-full max-w-4xl mt-[-5vh] md:mt-[-10vh]">
                 <motion.h1
                     initial={{ opacity: 0, y: 20 }}

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="relative flex h-[100dvh] w-full flex-col items-center justify-center overflow-hidden bg-black text-white px-4">
+    <main className="relative flex h-[100dvh] w-full flex-col items-center justify-center overflow-hidden text-white px-4">
       <div className="z-10 flex flex-col items-center justify-center text-center relative px-4 sm:px-6 md:px-10 w-full max-w-4xl mt-[-5vh] md:mt-[-10vh]">
         <BlurFade delay={0.5} inView>
           <h1 className="text-white text-5xl md:text-7xl font-bold tracking-tight">

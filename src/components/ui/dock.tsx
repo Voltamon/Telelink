@@ -20,6 +20,7 @@ export interface DockProps extends VariantProps<typeof dockVariants> {
   disableMagnification?: boolean
   iconDistance?: number
   direction?: "top" | "middle" | "bottom"
+  onClick?: () => void
   children: React.ReactNode
 }
 
@@ -42,6 +43,7 @@ const Dock = React.forwardRef<HTMLDivElement, DockProps>(
       disableMagnification = DEFAULT_DISABLEMAGNIFICATION,
       iconDistance = DEFAULT_DISTANCE,
       direction = "middle",
+      onClick,
       ...props
     },
     ref
@@ -72,6 +74,7 @@ const Dock = React.forwardRef<HTMLDivElement, DockProps>(
         ref={ref}
         onMouseMove={(e) => mouseX.set(e.pageX)}
         onMouseLeave={() => mouseX.set(Infinity)}
+        onClick={onClick}
         {...props}
         className={cn(dockVariants({ className }), {
           "items-start": direction === "top",
