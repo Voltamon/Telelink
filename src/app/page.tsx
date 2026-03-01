@@ -5,25 +5,25 @@ export default function Home() {
   return (
     <main className="relative flex h-[100dvh] w-full flex-col items-center justify-center overflow-hidden text-white px-4">
       <div className="z-10 flex flex-col items-center justify-center text-center relative px-4 sm:px-6 md:px-10 w-full max-w-4xl mt-[-5vh] md:mt-[-10vh]">
-        <BlurFade delay={0.5} inView>
+        <BlurFade delay={0.5} offset={20} inView direction="up">
           <h1 className="text-white text-5xl md:text-7xl font-bold tracking-tight">
             Telelink
           </h1>
         </BlurFade>
 
-        <BlurFade delay={0.75} inView>
+        <BlurFade delay={0.75} offset={20} inView direction="up">
           <p className="mt-6 md:mt-10 text-gray-300 text-base md:text-xl md:leading-relaxed max-w-3xl font-light mx-auto">
             Telelink is a civic media platform built to solve the truth problem by rebuilding political discourse. We provide the foundation for honest, unfiltered debate, free from the algorithms that reward outrage and the gatekeepers that shape the narrative.
           </p>
         </BlurFade>
 
-        <BlurFade delay={0.85} inView>
+        <BlurFade delay={0.85} offset={20} inView direction="up">
           <p className="mt-4 md:mt-8 text-gray-300 text-base md:text-xl md:leading-relaxed max-w-3xl font-light mx-auto">
             Designed entirely around transparency, we empower you to speak freely and engage in truth-aligned dialogue. Join the waitlist to take back control of the conversation and experience the future of political engagement.
           </p>
         </BlurFade>
 
-        <BlurFade delay={1.0} inView className="w-full">
+        <BlurFade delay={1.0} inView className="w-full" offset={20} direction="up">
           <div className="mt-8 md:mt-12 flex justify-center w-full">
             <Link
               href="#"

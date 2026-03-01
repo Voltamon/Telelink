@@ -35,7 +35,7 @@ export function BlurFade({
   duration = 0.4,
   delay = 0,
   offset = 6,
-  direction = "down",
+  direction = "up",
   inView = false,
   inViewMargin = "-50px",
   blur = "6px",
